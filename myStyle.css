@@ -1,0 +1,147 @@
+body 
+{
+margin: 0px; padding: 0px 0px 0px 0px;
+/*text-align:center;*/
+font-family: verdana, arial, helvetica, sans-serif;
+font-size:.8em; /*.8em;*/
+letter-spacing: 0.02em;
+background-color: #FFFFFF;
+/*background-color: #000000;*/
+/*background-color:#E238EC;*/ 
+/*background-color: #BCE954;*/
+background-repeat: no-repeat;
+background-position:top center;
+}
+
+#container
+{
+background-color:#FFFFFF;
+/*background-color:#BCE954;*/
+/*border: 7px solid #306EFF;*/   
+padding:0px 6px 0px 0px; /*width: auto;*/
+/*margin: 60px,30px,30px,30px;*/
+margin: 20px auto;
+height:950px;   
+width:770px;
+voice-family:"\"}\"";
+voice-family:inherit;
+}
+
+.centeralign {text-align:center}
+.leftalign {text-align:left}
+
+#motioncontainer 
+{
+width: 100%; 
+height: 130px; 
+}
+#motioncontainer a img { border: 1px solid #000000; }
+#motioncontainer a:hover img { border: 1px solid navy; }
+#motioncontainer a:hover { color: #FFFFFF/*red*/; }
+
+.menu {text-align:center; width:738px; height:32px; padding:0px 0px 0px 6px; position:relative; z-index:100;/*border-right:1px solid #000;*/ font-family:arial, sans-serif;}
+/* hack to correct IE5.5 faulty box model */
+* html .menu {width:887.0px; width:887.0px;}
+/* remove all the bullets, borders and padding from the default list styling */
+.menu ul {padding:0;margin:0;list-style-type:none;}
+.menu ul li ul li {width:123px;}
+/* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+.menu li {float:left;width:123px;position:relative;}
+/* style the links for the top level */
+.menu a, .menu a:visited {display:block;font-size:12px;text-decoration:none; /*color:#fff;*/ color:#000000/*#151B54*/; width:123px; height:30px; border:1px solid #000; border-width:1px 1px 1px 1px; background:#FFFFFF/*#E238EC*/; /*background:#F6358A;*/ padding:0px 25px 0px 0px; line-height:29px; font-weight:bold;}
+/* a hack so that IE5.5 faulty box model is corrected */
+* html .menu a, * html .menu a:visited {width:119px;}
+/* style the second level background */
+.menu ul ul a.drop, .menu ul ul a.drop:visited {background:#d4d8bd url(http://www.cssplay.co.uk/menus/breadcrumbs/grey-arrow.gif) no-repeat 123px center;}
+/* style the second level hover */
+.menu ul ul a.drop:hover{background:#c9ba65 url(http://www.cssplay.co.uk/menus/breadcrumbs/blue-arrow.gif) no-repeat 123px center;}
+.menu ul ul :hover > a.drop {background:#c9ba65 url(http://www.cssplay.co.uk/menus/breadcrumbs/blue-arrow.gif) no-repeat 123px center;}
+/* style the third level background */
+.menu ul ul ul a, .menu ul ul ul a:visited {background:#e2dfa8;}
+/* style the third level hover */
+.menu ul ul ul a:hover {background:#b2ab9b;}
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+.menu ul ul {visibility:hidden;position:absolute;height:0;top:31px;left:0; width:119px;border-top:1px solid #000;}
+/* another hack for IE5.5 */
+* html .menu ul ul {top:30px;top:31px;}
+/* position the third level flyout menu */
+.menu ul ul ul{left:119px; top:-1px; width:119px;}
+/* position the third level flyout menu for a left flyout */
+.menu ul ul ul.left {left:-119px;}
+/* style the table so that it takes no ppart in the layout - required for IE to work */
+.menu table {position:absolute; top:0; left:0; border-collapse:collapse;;}
+/* style the second level links - sub menu items */
+.menu ul ul a, .menu ul ul a:visited {background:#d4d8bd; /*color:#000;*/ color:#ffffff; height:auto; line-height:1em; padding:5px 10px; width:102px;border-width:0 1px 1px 1px;}
+/* yet another hack for IE5.5 */
+* html .menu ul ul a, * html .menu ul ul a:visited {width:147.68px;/*width:128px;*/}
+/* style the top level hover */
+.menu a:hover, .menu ul ul a:hover{/*color:#000; background:#b7d186;*/ color:#ffffff; background:#E238EC;/*background:#F6358A;*/}
+.menu :hover > a, .menu ul ul :hover > a {/*color:#000; background:#b7d186;*/ color:#ffffff; background:#E238EC;/*background:#F6358A;*/}
+/* make the second level visible when hover on first level list OR link */
+.menu ul li:hover ul,
+.menu ul a:hover ul{visibility:visible; }
+/* keep the third level hidden when you hover on first level list OR link */
+.menu ul :hover ul ul{visibility:hidden;}
+/* make the third level visible when you hover over second level list OR link */
+.menu ul :hover ul :hover ul{ visibility:visible;}
+
+#middle 
+{
+margin: 0px 30px 0px 30px; 
+padding: 0px;
+background-repeat: repeat y;
+height:400px;   
+width:730px;	
+voice-family:"\"}\"";
+voice-family:inherit;
+/*background-color: #BCE954;*/
+}
+#middle2 
+{
+margin: 0px 0px 0px 30px; 
+padding: 0px;
+background-repeat: repeat y;
+height:270px;   
+width:730px;	
+voice-family:"\"}\"";
+voice-family:inherit;
+/*background-color: #BCE954;*/
+}
+/*
+#middle p
+{
+line-height:1.5em;
+font-size: .8em;
+text-align: justify;
+padding: 0px 0px 0px 0px;
+}	
+*/
+#left_i
+{
+float:left;
+background-image:url(images/index02.jpg);
+height:350px;   
+width:320px;
+margin: 30px 0px 30px 7px;
+/*background-color: #BCE954;*/
+}	
+
+#left_c
+{
+float:left;
+text-align: justify;
+height:350px;   
+width:320px;
+margin: 0px 0px 0px 5px;
+/*background-color: #BCE954;*/
+}
+
+#left_d
+{
+float:left;
+text-align: justify;
+height:350px;   
+width:320px;
+margin: 0px 0px 0px 0px;
+/*background-color: #BCE954;*/
+}
